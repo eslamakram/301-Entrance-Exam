@@ -1,37 +1,127 @@
 
-main{
-    font-size: 26px;
-     font-family: 'Courier New', Courier, monospace;
-     background-color: cadetblue;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
 }
+
+body{
+    font-size: 27px;
+    font-weight: 15%;
+    color: rgb(247, 244, 244);
+     font-family: 'Roboto', sans-serif;
+     background-image: url('../img/finalfinal.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+    }
+
+    main{
+        width: 100%;
+        padding: 70px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 40px;
+    }
+    
+
 header{
+    position: absolute;
     display: grid;
-    grid-template-columns: 70px 500px;
-    background-color: black;
-    color: rgba(238, 230, 218, 0.781);
-height: 30px;
+    grid-template-columns: auto auto;
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.349);
+    border-bottom: 1px solid #fff;
 width: 100%;
+padding:10px;
+}
+
+
+
+header nav{
+    float: right;
+    margin-right: 20px;
 }
 
 
 header a{
     text-decoration: none;
+   color: #fff;
 }
 
-ul li{
-    display: inline-block;
-}
+header nav ul li{
+    display: inline;
+
+        padding-left:30px;
+     
+        margin-top:-30px;
+    }
+    
+    header nav ul li:last-child{
+        margin-right: 10px;
+    }
+
 
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: rgba(238, 230, 218, 0.781);
-    z-index: 0px;
+    height: 70px;
+    background-color: rgba(128, 128, 128, 0.349);
+    border-top: 1px solid #fff;
+}
+    footer p{
+    font-size: x-large;
+    text-align: center;
+    padding-top:10px;
+    margin-bottom: 5px;
+}
 
+.formSection {
+    background-color: rgba(128, 128, 128, 0.349);
+    border: 1px solid #fff; 
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+    /*
+    height: 500px;*/
+}
+
+
+form label , form input ,select{
+    width:51%;
+}
+
+form label {
+    float:left;
+}
+form input , select{
+    float:right;
+    height: 20px;
+}
+
+form input[type='submit']{
+    clear:both;
+    display: block;
+    margin:20px 25% 0 25%;
+    height: 30px;
+    font-weight: bold;
+    box-shadow: 1px 1px black;
+}
+
+.tableSection{
+    width: 100%;
+    padding:10px;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.349);
+    border: 1px solid #fff; 
+}
+
+.tableSection td , .tableSection th {
+    column-fill: balance ;
+    column-width: auto;
+    border: 1px solid rgba(238, 238, 238, 0.849);
+    line-height: 1.6;
+    padding-left:5px;
 }
